@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heart beat</title>
+    <style>
+        body {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            height: 100vh;
+            margin: 0%;
+            background-color: antiquewhite;
+        }
+        
+        .red1 {
+            height: 160px;
+            width: 100px;
+            background-color: rgb(253, 0, 0);
+            border-radius: 50px 50px 0px 0px;
+            transform: rotateZ(-40deg) translateZ(50px);
+            animation: beat ease-in-out 1s infinite;
+            box-shadow: 10px 0px 0px 0px rgb(238, 126, 126);
+        }
+        
+        .red2 {
+            height: 205px;
+            width: 100px;
+            background-color: rgb(255, 0, 0);
+            border-radius: 50px 50px 0px 0px;
+            transform: rotateZ(50deg) translateY(27px);
+            animation: beat ease-in-out 1s infinite;
+            box-shadow: 10px 0px 0px 0px rgb(231, 123, 123);
+        }
+        
+        @keyframes beat {
+            0%,
+            100% {
+                scale: 1;
+            }
+            25% {
+                scale: 0.9;
+            }
+            50% {
+                scale: 0.93;
+            }
+            75% {
+                scale: 0.95;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="red1"></div>
+    <div class="red2"></div>
+
+</body>
+
+</html>
